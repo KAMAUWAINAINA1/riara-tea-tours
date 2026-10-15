@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & Booking | Riara Tea Tours</title>
+  <meta name="description" content="Book a tea tour or ask a question. Call, WhatsApp or email Riara Tea Tours in Limuru, Kenya.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main>
+  <section class="page-banner" style="background-image:url('assets/img/farmhouse-guests.jpg')">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / Contact &amp; booking</div>
+      <h1>Contact &amp; booking</h1>
+      <p>Tell us when you'd like to visit. We usually reply within 24 hours on business days.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <span class="eyebrow">Get in touch</span>
+        <h2>We'd love to host you</h2>
+        <p class="lead">Call, WhatsApp or email us, or use the booking form.</p>
+        <div class="contact-cards">
+          <div class="contact-card"><span class="ico" data-icon="phone"></span><div><h3>Phone</h3><a data-site="phone" href="#"></a></div></div>
+          <div class="contact-card"><span class="ico" data-icon="wa"></span><div><h3>WhatsApp</h3><a data-site="whatsapp" href="#" target="_blank" rel="noopener">Chat with us on WhatsApp</a></div></div>
+          <div class="contact-card"><span class="ico" data-icon="mail"></span><div><h3>Email</h3><a data-site="email" href="#"></a></div></div>
+          <div class="contact-card"><span class="ico" data-icon="pin"></span><div><h3>Location</h3><p><span data-site="address"></span><br>Plus Code: <span data-site="plusCode"></span></p></div></div>
+          <div class="contact-card"><span class="ico">🕘</span><div><h3>Opening hours</h3><p id="hours"></p></div></div>
+        </div>
+      </div>
+      <div class="panel" id="book">
+        <h3>Booking enquiry</h3>
+        <p>Fill this in and send it to us on WhatsApp or by email. We'll confirm availability and the price for your group.</p>
+        <form class="form" data-enquiry>
+          <label>Tour<select name="tour" data-label="Tour" required><option value="">Choose a tour…</option></select></label>
+          <div class="form-row">
+            <label>Your name<input name="name" data-label="Name" required autocomplete="name"></label>
+            <label>Phone<input name="phone" data-label="Phone" type="tel" required autocomplete="tel"></label>
+          </div>
+          <label>Email (optional)<input name="email" data-label="Email" type="email" autocomplete="email"></label>
+          <div class="form-row">
+            <label>Preferred date<input name="date" data-label="Preferred date" type="date"></label>
+            <label>Number of people<input name="people" data-label="Number of people" type="number" min="1" value="2"></label>
+          </div>
+          <label>Visitor type<select name="visitor" data-label="Visitor type"><option>Kenyan resident</option><option>International visitor</option><option>School / students</option><option>Company / organisation</option></select></label>
+          <label>Anything else?<textarea name="message" data-label="Message" placeholder="Add-ons, transport, dietary needs, questions…"></textarea></label>
+          <button class="btn btn-wa" type="submit" value="whatsapp"><span data-icon="wa"></span> Send via WhatsApp</button>
+          <p class="form-alt">or <button type="submit" value="email">send by email</button></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <iframe class="map" title="Map to Riara Farm, Limuru" loading="lazy" src="https://maps.google.com/maps?q=VMVR%2B6M%20Limuru%2C%20Kenya&z=14&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+<script>
+  // Fill icons and opening hours from the shared settings
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("[data-icon]").forEach((el) => (el.innerHTML = ICONS[el.dataset.icon]));
+    document.getElementById("hours").innerHTML = SITE.hours.map(([d, h]) => `${d}: ${h}`).join("<br>");
+  });
+</script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/tours.js"></script>
+<script src="assets/js/layout.js"></script>
+</body>
+</html>
