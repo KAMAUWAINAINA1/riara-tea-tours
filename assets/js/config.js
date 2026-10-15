@@ -24,6 +24,15 @@ window.SITE = {
     youtube: "https://www.youtube.com/watch?v=vhMPCQSljsg",
   },
 
+  // Numbers shown in the stats band on the home page.
+  // Edit, add or remove rows as the business grows.
+  stats: [
+    ["500+", "Happy guests"],
+    ["6", "Signature tours"],
+    ["10+", "Experience types"],
+    ["20+", "Packages"],
+  ],
+
   // Optional banner shown at the very top of every page.
   // Set to "" to hide it.
   announcement: "",

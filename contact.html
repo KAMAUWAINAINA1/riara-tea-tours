@@ -30,7 +30,7 @@
           <div class="contact-card"><span class="ico" data-icon="wa"></span><div><h3>WhatsApp</h3><a data-site="whatsapp" href="#" target="_blank" rel="noopener">Chat with us on WhatsApp</a></div></div>
           <div class="contact-card"><span class="ico" data-icon="mail"></span><div><h3>Email</h3><a data-site="email" href="#"></a></div></div>
           <div class="contact-card"><span class="ico" data-icon="pin"></span><div><h3>Location</h3><p><span data-site="address"></span><br>Plus Code: <span data-site="plusCode"></span></p></div></div>
-          <div class="contact-card"><span class="ico">🕘</span><div><h3>Opening hours</h3><p id="hours"></p></div></div>
+          <div class="contact-card"><span class="ico" data-icon="clock"></span><div><h3>Opening hours</h3><p id="hours"></p></div></div>
         </div>
       </div>
       <div class="panel" id="book">
@@ -62,9 +62,8 @@
   </section>
 </main>
 <script>
-  // Fill icons and opening hours from the shared settings
+  // Fill opening hours from the shared settings
   document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("[data-icon]").forEach((el) => (el.innerHTML = ICONS[el.dataset.icon]));
     document.getElementById("hours").innerHTML = SITE.hours.map(([d, h]) => `${d}: ${h}`).join("<br>");
   });
 </script>
