@@ -137,7 +137,7 @@ window.TOURS = [
     featured: true,
     title: "School & Student Tour",
     category: "Education",
-    image: "assets/img/school-visit.jpg",
+    image: "assets/img/tea-shoots.jpg",
     summary:
       "A hands-on science and agribusiness lesson from field to factory that ties in with the curriculum.",
     duration: "1.5 – 3 hours",
@@ -163,7 +163,7 @@ window.TOURS = [
       "Student rates need a valid student ID or school letter.",
       "We tailor the visit to your learning goals. Contact us for a quotation.",
     ],
-    gallery: ["assets/img/students-tea-leaf.jpg", "assets/img/tea-grading.jpg", "assets/img/students-banner.jpg"],
+    gallery: ["assets/img/tea-flower.jpg", "assets/img/factory-machines.jpg", "assets/img/tea-grading.jpg"],
   },
 
   {
