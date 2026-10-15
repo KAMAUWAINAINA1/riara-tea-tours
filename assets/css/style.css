@@ -167,6 +167,10 @@ a.card:hover .card-img img { transform: scale(1.04); }
 .tour-hero-img { border-radius: 20px; width: 100%; aspect-ratio: 16/10; object-fit: cover; margin-bottom: 14px; }
 .thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 40px; }
 .thumbs img { border-radius: 12px; aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+.videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; margin-bottom: 40px; }
+.videos figure { margin: 0; }
+.videos video { width: 100%; aspect-ratio: 9/16; max-height: 520px; object-fit: cover; border-radius: 14px; background: var(--leaf-dark); box-shadow: var(--shadow); }
+.videos figcaption { font-size: .9rem; color: var(--muted); margin-top: 8px; }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; background: var(--white); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); margin-bottom: 36px; }
 .facts dt { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
 .facts dd { margin: 0; font-weight: 600; color: var(--leaf-dark); }

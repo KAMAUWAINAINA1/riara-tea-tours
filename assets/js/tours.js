@@ -8,7 +8,7 @@
 
    To REMOVE a tour: delete its { ... } block.
    To feature a tour on the home page: set featured: true.
-   Photos live in assets/img/.
+   Photos live in assets/img/. Videos (optional) live in assets/video/.
    ========================================================= */
 window.TOURS = [
   {
@@ -50,7 +50,7 @@ window.TOURS = [
     featured: true,
     title: "Tea Factory Tour",
     category: "Factory",
-    image: "assets/img/tea-grading.jpg",
+    image: "assets/img/factory-visitors.jpg",
     summary:
       "Go behind the scenes to watch the machines at work, from withering to grading, then taste and shop at factory prices.",
     duration: "About 2 – 3 hours",
@@ -84,7 +84,11 @@ window.TOURS = [
       "Please book at least 48 hours ahead.",
       "A 50% deposit by M-Pesa or bank transfer confirms your booking.",
     ],
-    gallery: ["assets/img/tea-grading-tall.jpg", "assets/img/tea-tasting.jpg", "assets/img/guests-in-tea-field.jpg"],
+    gallery: ["assets/img/factory-floor-wide.jpg", "assets/img/factory-machines.jpg", "assets/img/factory-drying-fan.jpg", "assets/img/factory-floor.jpg", "assets/img/tea-grading.jpg", "assets/img/tea-tasting.jpg"],
+    videos: [
+      { src: "assets/video/factory-rolling.mp4", poster: "assets/video/factory-rolling-poster.jpg", caption: "Fresh leaf moving through the rolling machines" },
+      { src: "assets/video/factory-sorting.mp4", poster: "assets/video/factory-sorting-poster.jpg", caption: "The factory floor during production" },
+    ],
   },
 
   {
@@ -92,7 +96,7 @@ window.TOURS = [
     featured: true,
     title: "Group & Corporate Tour",
     category: "Groups",
-    image: "assets/img/visitors-group.jpg",
+    image: "assets/img/group-farmhouse.jpg",
     summary:
       "An outing for company teams, chamas, SACCOs, churches and friends, with group rates and optional add-ons.",
     duration: "About 2.5 hours (or a full day with add-ons)",
@@ -125,7 +129,7 @@ window.TOURS = [
       "Please book at least 48 hours ahead. Larger groups need more notice.",
       "We'll agree payment terms directly for large or corporate bookings.",
     ],
-    gallery: ["assets/img/farmhouse-guests.jpg", "assets/img/guests-in-tea-field.jpg", "assets/img/farmhouse.jpg"],
+    gallery: ["assets/img/visitors-group.jpg", "assets/img/factory-visitors.jpg", "assets/img/farmhouse-guests.jpg"],
   },
 
   {
@@ -203,7 +207,7 @@ window.TOURS = [
     featured: true,
     title: "Tea & Wellness Retreat",
     category: "Wellness",
-    image: "assets/img/forest-walk.jpg",
+    image: "assets/img/wellness-garden.jpg",
     summary:
       "Slow down with nature walks, mindful tea tasting, blending workshops and meditation in our gardens.",
     duration: "Half day to full day",
@@ -232,6 +236,6 @@ window.TOURS = [
       "Personalised tea gift kits",
     ],
     notes: ["Final price depends on the extras you choose.", "A 50% deposit confirms your booking."],
-    gallery: ["assets/img/indigenous-forest.jpg", "assets/img/tea-tasting.jpg", "assets/img/tea-valley.jpg"],
+    gallery: ["assets/img/forest-walk.jpg", "assets/img/indigenous-forest.jpg", "assets/img/tea-tasting.jpg"],
   },
 ];

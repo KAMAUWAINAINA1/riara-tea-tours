@@ -60,6 +60,7 @@
             <table class="price-table"><tbody>${t.prices.map(([a, b]) => `<tr><td>${a}</td><td>${b}</td></tr>`).join("")}</tbody></table>
             ${t.notes ? `<div class="notes"><strong>Good to know</strong><ul>${t.notes.map((n) => `<li>${n}</li>`).join("")}</ul></div>` : ""}
             ${t.gallery ? `<h2>Gallery</h2><div class="thumbs">${t.gallery.map((g) => `<img src="${g}" alt="" loading="lazy">`).join("")}</div>` : ""}
+            ${t.videos ? `<h2>See it in action</h2><div class="videos">${t.videos.map((v) => `<figure><video src="${v.src}" poster="${v.poster || ""}" controls muted playsinline preload="none"></video>${v.caption ? `<figcaption>${v.caption}</figcaption>` : ""}</figure>`).join("")}</div>` : ""}
           </div>
         </div>
         <aside class="sticky">
