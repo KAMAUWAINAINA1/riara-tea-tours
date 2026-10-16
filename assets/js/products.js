@@ -32,4 +32,16 @@ window.PRODUCTS = [
       "Our everyday Kenyan black tea in convenient bags. Strong, rich and quick to brew, it makes the perfect cup of chai.",
     details: ["Tea bags in a resealable pouch", "Grown at Riara, Limuru", "Brew 3–5 minutes; add milk and sugar to taste"],
   },
+  {
+    id: "chamomile",
+    available: true,
+    name: "Chamomile Tea",
+    tagline: "Caffeine-free herbal tea",
+    price: 650,
+    image: "assets/img/shop-chamomile.jpg",
+    gallery: ["assets/img/shop-chamomile-2.jpg", "assets/img/shop-chamomile-3.jpg", "assets/img/shop-chamomile-back.jpg"],
+    description:
+      "Dried chamomile flowers for a gentle, floral cup. Naturally caffeine-free and known for its calming properties, it's a go-to for winding down in the evening.",
+    details: ["Dried chamomile flowers, resealable pouch", "Naturally caffeine-free", "Steep 1 tbsp in hot (not boiling) water for 5–10 minutes; add honey or lemon if you like"],
+  },
 ];
