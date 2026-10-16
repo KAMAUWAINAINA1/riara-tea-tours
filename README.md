@@ -9,9 +9,10 @@ It needs no build step or database and is hosted free on GitHub Pages.
 |---|---|
 | Phone, email, WhatsApp, address, hours, social links, top banner | `assets/js/config.js` |
 | Add / remove / change a tour, prices, photos | `assets/js/tours.js` |
+| Shop products, prices (KES), product photos | `assets/js/products.js` |
 | Menu links, footer | `assets/js/layout.js` (the `NAV` list at the top) |
 | Colours and fonts | `assets/css/style.css` (the `:root` block at the top) |
-| Home, About, FAQ, Contact, Policies text | the matching `.html` file |
+| Home, Our Story, Shop, FAQ, Contact, Policies text | the matching `.html` file |
 | Photos | drop into `assets/img/` and reference by filename |
 
 **Adding a tour:** copy one `{ ... }` block in `tours.js`, give it a new `id`, and edit the text.
@@ -24,6 +25,11 @@ and is added to the booking form dropdown and the footer.
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
+
+## Shop orders
+
+The shop (`shop.html`) lets visitors pick quantities and send the order by WhatsApp
+or email. Nothing is charged online; Riara confirms delivery and takes payment by M-Pesa.
 
 ## Bookings
 

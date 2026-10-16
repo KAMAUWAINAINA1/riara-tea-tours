@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | Riara Tea</title>
+  <meta name="description" content="Buy Riara tea grown in Limuru, Kenya: whole-leaf orthodox black tea and everyday tea bags. Order by WhatsApp or email.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main>
+  <section class="page-banner" style="background-image:url('assets/img/shop-orthodox-leaves.jpg'); background-position: center 70%">
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a> / Shop</div>
+      <h1>Our tea</h1>
+      <p>Grown, picked and made on our farm in Limuru. Take a taste of Riara home.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">From our farm to your cup</span>
+        <h2>Shop Riara tea</h2>
+        <p class="lead">Choose your tea and quantity, then send us your order on WhatsApp or by email. We'll confirm the total, delivery and payment by M-Pesa.</p>
+      </div>
+      <div class="products" id="products"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="order">
+    <div class="wrap order-grid">
+      <div>
+        <span class="eyebrow">Your order</span>
+        <h2>Order summary</h2>
+        <ul class="order-lines" id="order-lines"></ul>
+        <div class="order-total"><span>Total</span><strong id="order-total">KES 0</strong></div>
+        <p class="small-print">Delivery costs depend on your location. We'll confirm them before you pay. You can also collect your tea at the farm or buy it after a tour.</p>
+      </div>
+      <form class="panel form" id="order-form">
+        <h3>Your details</h3>
+        <div class="form-row">
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+        </div>
+        <label>Delivery<select name="delivery">
+          <option>Deliver to me (Nairobi &amp; surrounding areas)</option>
+          <option>Deliver to me (elsewhere in Kenya)</option>
+          <option>I'll collect at Riara Farm, Limuru</option>
+        </select></label>
+        <label>Delivery location (optional)<input name="address" placeholder="Estate, town or nearest landmark" autocomplete="street-address"></label>
+        <label>Notes (optional)<textarea name="notes" rows="3" placeholder="Gift message, preferred delivery day…"></textarea></label>
+        <button class="btn btn-wa" type="submit" value="whatsapp"><span data-icon="wa"></span> Send order via WhatsApp</button>
+        <p class="form-alt">or <button type="submit" value="email">send by email</button></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div><img src="assets/img/tea-tasting.jpg" alt="Tea tasting at Riara" loading="lazy"></div>
+      <div>
+        <span class="eyebrow">Taste before you buy</span>
+        <h2>Visit the farm shop</h2>
+        <p>Every tour ends with a tasting and a visit to our farm shop, where you can buy our teas at farm prices.</p>
+        <a class="btn btn-outline" href="tours.html">See our tours</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="order-bar" id="order-bar" hidden>
+  <span data-count></span>
+  <a class="btn btn-sm btn-light" href="#order">View order</a>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/tours.js"></script>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>

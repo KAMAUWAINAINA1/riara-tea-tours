@@ -7,8 +7,9 @@
   const S = window.SITE;
   const NAV = [
     ["index.html", "Home"],
+    ["our-story.html", "Our Story"],
     ["tours.html", "Tours"],
-    ["about.html", "About"],
+    ["shop.html", "Shop"],
     ["faq.html", "FAQ"],
     ["contact.html", "Contact"],
   ];
@@ -100,11 +101,17 @@
   document.body.insertAdjacentHTML("afterbegin", header);
   document.body.insertAdjacentHTML("beforeend", footer);
 
+  // On the home page the header sits over the photo; make it solid once you scroll.
+  const headerEl = document.querySelector(".site-header");
+  const onScroll = () => headerEl.classList.toggle("scrolled", window.scrollY > 40 || document.getElementById("site-nav").classList.contains("open"));
+  if (document.body.classList.contains("home")) { onScroll(); window.addEventListener("scroll", onScroll, { passive: true }); }
+
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.getElementById("site-nav");
   toggle.addEventListener("click", () => {
     const open = nav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", open);
+    if (document.body.classList.contains("home")) onScroll();
   });
 
   // Fill any element marked data-icon="name" with that icon

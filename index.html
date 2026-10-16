@@ -10,36 +10,41 @@
   <meta property="og:image" content="assets/img/tea-pickers.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="home">
 <main>
 
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Limuru Highlands · Kenya</span>
-        <h1>Sip the journey, savour the story.</h1>
-        <p class="lead">Walk our family tea farm with a guide, watch the factory turn fresh leaf into tea, and taste the result, just 45 minutes from Nairobi.</p>
-        <div class="btn-row">
-          <a class="btn" href="tours.html">Explore tours</a>
-          <a class="btn btn-outline" href="contact.html#book">Plan a visit</a>
-        </div>
-        <div class="hero-facts">
-          <div><strong>From KES 1,000</strong><span>Tours for every budget</span></div>
-          <div><strong>Mon – Sat</strong><span>10 AM &amp; 2 PM slots</span></div>
-          <div><strong>45 min</strong><span>from Nairobi</span></div>
-        </div>
-      </div>
-      <div class="hero-media">
-        <img src="assets/img/tea-pickers.jpg" alt="Visitors walking through rows of tea with a Riara guide" width="900" height="700">
-        <div class="float-card">
-          <span class="dot"><svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.2 3.8 21.3l1.9.7 1-2.3c.5.2 1 .3 1.3.3C19 20 22 3 22 3c-1 2-8 2.3-13 3.3S2 11.5 2 13.5s1.8 3.8 1.8 3.8C7 8 17 8 17 8z"/></svg></span>
-          <div><strong>Family-run tea farm</strong><small>Tours by people who grow the tea</small></div>
-        </div>
+  <section class="hero-full" style="background-image:url('assets/img/hero-picker.jpg')">
+    <div>
+      <h1>Leaf to cup</h1>
+      <p class="hero-sub">Riara Tea · Limuru, Kenya</p>
+      <div class="btn-row">
+        <a class="btn btn-tea" href="tours.html">Book a tour</a>
+        <a class="btn btn-light" href="shop.html">Buy our tea</a>
       </div>
     </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </section>
+
+  <section class="section">
+    <div class="wrap intro">
+      <span class="eyebrow">Welcome to Riara</span>
+      <h2>Tea experiences in the Limuru highlands</h2>
+      <p>Walk the rows of our family tea farm, pick a few leaves with our farmers, watch the factory turn fresh leaf into tea, then sit down to taste the result. Riara is 45 minutes from Nairobi, with tours from KES 1,000.</p>
+    </div>
+  </section>
+
+  <section class="tiles" aria-label="Explore">
+    <a class="tile" href="shop.html">
+      <img src="assets/img/shop-orthodox-leaves.jpg" alt="" loading="lazy">
+      <div><h2>Our tea</h2><span>Shop now</span></div>
+    </a>
+    <a class="tile" href="tours.html">
+      <img src="assets/img/banner-tea-rows.jpg" alt="" loading="lazy">
+      <div><h2>Tea tours</h2><span>Explore tours</span></div>
+    </a>
   </section>
 
   <section class="section alt">
@@ -69,7 +74,7 @@
           <li>Tours for families, schools, groups and international visitors</li>
           <li>Pay easily with M-Pesa</li>
         </ul>
-        <a class="btn" href="about.html">Our story</a>
+        <a class="btn" href="our-story.html">Our story</a>
       </div>
     </div>
   </section>
