@@ -31,6 +31,8 @@
 
   document.title = `${t.title} | Riara Tea Tours`;
   document.querySelector('meta[name="description"]')?.setAttribute("content", t.summary);
+  const facts = [["Duration", t.duration], ["Available", t.days || "By booking"], ["Times", t.times], ["Group size", t.groupSize], ["Languages", t.languages]]
+    .filter(([, v]) => v).map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("");
   const list = (items) => `<ul class="checks">${items.map((i) => `<li>${i}</li>`).join("")}</ul>`;
 
   detail.innerHTML = `
@@ -44,15 +46,11 @@
     <section class="section">
       <div class="wrap tour-layout">
         <div>
-          <dl class="facts">
-            <div><dt>Duration</dt><dd>${t.duration}</dd></div>
-            <div><dt>Available</dt><dd>${t.days}</dd></div>
-            <div><dt>Times</dt><dd>${t.times}</dd></div>
-            <div><dt>Languages</dt><dd>${t.languages}</dd></div>
-          </dl>
+          <dl class="facts">${facts}</dl>
           <div class="tour-content">
             <h2>About this tour</h2>
             <p>${t.intro}</p>
+            ${t.itinerary ? `<h2>The day</h2><ol class="timeline">${t.itinerary.map(([time, what]) => `<li>${time ? `<strong>${time}</strong>` : ""}<span>${what}</span></li>`).join("")}</ol>` : ""}
             <h2>What's included</h2>
             ${list(t.includes)}
             ${t.addons ? `<h2>Optional add-ons</h2>${list(t.addons)}` : ""}

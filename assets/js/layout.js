@@ -66,7 +66,7 @@
       <div class="wrap footer-grid">
         <div>
           <img class="footer-logo" src="assets/img/logo.png" alt="${S.name}" width="135" height="61">
-          <p>Tea tours, factory visits and retreats on a family-run tea farm in Limuru, about 45 minutes from Nairobi.</p>
+          <p>Tea farm, factory and avocado orchard tours on a family-run farm in Limuru, about 45 minutes from Nairobi.</p>
           <div class="social">
             ${S.social.facebook ? `<a href="${S.social.facebook}" aria-label="Facebook" target="_blank" rel="noopener">${icons.fb}</a>` : ""}
             ${S.social.instagram ? `<a href="${S.social.instagram}" aria-label="Instagram" target="_blank" rel="noopener">${icons.ig}</a>` : ""}

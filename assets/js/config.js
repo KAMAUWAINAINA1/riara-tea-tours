@@ -28,9 +28,9 @@ window.SITE = {
   // Edit, add or remove rows as the business grows.
   stats: [
     ["500+", "Happy guests"],
-    ["6", "Signature tours"],
-    ["10+", "Experience types"],
-    ["20+", "Packages"],
+    ["4", "Signature tours"],
+    ["10+", "Farm activities"],
+    ["45 min", "From Nairobi"],
   ],
 
   // Optional banner shown at the very top of every page.
