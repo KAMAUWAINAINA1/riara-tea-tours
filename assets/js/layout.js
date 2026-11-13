@@ -8,6 +8,7 @@
   const NAV = [
     ["index.html", "Home"],
     ["our-story.html", "Our Story"],
+    ["about.html", "About Us"],
     ["tours.html", "Tours"],
     ["shop.html", "Shop"],
     ["faq.html", "FAQ"],

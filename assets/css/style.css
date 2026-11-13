@@ -67,6 +67,7 @@ svg.i-line { fill: none !important; stroke: currentColor; stroke-width: 1.75; st
 .site-nav a:not(.btn):hover, .site-nav a[aria-current] { color: var(--leaf); }
 .site-nav a[aria-current]::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--leaf-light); border-radius: 2px; }
 .nav-toggle { display: none; background: none; border: 0; padding: 10px; cursor: pointer; }
+@media (max-width: 1060px) { .site-nav { gap: 18px; } }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--ink); margin: 5px 0; transition: .2s; }
 @media (max-width: 860px) {
   .nav-toggle { display: block; }
@@ -344,3 +345,15 @@ body.home .site-header.scrolled { background: rgba(255,255,255,.97); border-bott
 .small-print { font-size: .9rem; color: var(--muted); }
 .order-bar { position: fixed; left: 16px; right: 92px; bottom: 20px; z-index: 55; display: flex; align-items: center; justify-content: space-between; gap: 12px; background: var(--leaf-dark); color: var(--white); padding: 10px 12px 10px 18px; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.2); max-width: 520px; }
 .order-bar[hidden] { display: none; }
+
+/* =========================================================
+   About us — team
+   ========================================================= */
+.team { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 28px; }
+.member { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+.member-photo { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center top; }
+.member-initials { display: grid; place-items: center; background: var(--sand); color: var(--leaf); font-family: var(--display); font-size: 4rem; letter-spacing: .08em; }
+.member-body { padding: 22px 22px 24px; }
+.member-body h3 { margin-bottom: .15em; }
+.member .role { display: block; font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--tea); margin-bottom: .8rem; }
+.member-body p { color: var(--muted); font-size: .97rem; margin: 0; }

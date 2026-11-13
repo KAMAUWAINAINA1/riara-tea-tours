@@ -12,7 +12,7 @@ It needs no build step or database and is hosted free on GitHub Pages.
 | Shop products, prices (KES), product photos | `assets/js/products.js` |
 | Menu links, footer | `assets/js/layout.js` (the `NAV` list at the top) |
 | Colours and fonts | `assets/css/style.css` (the `:root` block at the top) |
-| Home, Our Story, Shop, FAQ, Contact, Policies text | the matching `.html` file |
+| Home, Our Story, About Us (team), Shop, FAQ, Contact, Policies text | the matching `.html` file |
 | Photos | drop into `assets/img/` and reference by filename |
 
 **Adding a tour:** copy one `{ ... }` block in `tours.js`, give it a new `id`, and edit the text.
