@@ -352,7 +352,6 @@ body.home .site-header.scrolled { background: rgba(255,255,255,.97); border-bott
 .team { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 28px; }
 .member { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
 .member-photo { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center top; }
-.member-initials { display: grid; place-items: center; background: var(--sand); color: var(--leaf); font-family: var(--display); font-size: 4rem; letter-spacing: .08em; }
 .member-body { padding: 22px 22px 24px; }
 .member-body h3 { margin-bottom: .15em; }
 .member .role { display: block; font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--tea); margin-bottom: .8rem; }
